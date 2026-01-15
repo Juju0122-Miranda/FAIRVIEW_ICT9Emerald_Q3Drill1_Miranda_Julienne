@@ -9,54 +9,46 @@
     <title>Q3 Drill 1</title>
   
     <style>
-    
-    body{
-        font-family:'Courier New', Courier, monospace
-        height: 30px;
-    }
-
-    .box1{
-      margin: auto;
-        width: 600px;
-        height: auto;
-            border-radius: 25px;
-            background-color: rgba(245, 245, 220, 0.895);
-            text-align: center;
-    }
-
-    #box2{
-        margin-top: 150px;
-    }
-
-
-        </style>
+      body{
+          background-image: url('https://i.pinimg.com/736x/b9/88/d8/b988d8b38e77e5f10e74e3696d0c9d78.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 30px;
+          font-size: 28px;
+                }
+        
+    </style>
 
 </head>
 <body>
-    <div class="box1">
-    
-        <div class="container bg-dark" id="box2">
-            <h1 class="text-center text-light" id="first"></h1>
+        <div class="container bg-dark">
+            <h1 class="text-center text-light border-radius 25px" id="first"></h1>
         </div>
-
         <br>
 
         <div>
-                <blockquote class="text-center" id="blck">
+            <blockquote class="text-center" id="blck">
             In the equation 4x+2y=8 and the value of x is 5, what is y equal to?
             </blockquote>
+<!--
+ hint on how to solve: substitute the 5 to (x)            
+-->
+         <div class="container">
+  <div class="d-flex justify-content-center gap-2">
+    <div class="text-center">
+      <button type="button" class="btn btn-primary w-auto" onclick="document.getElementById('answer').innerHTML = one;">Answer</button>
+      <p class="text-success" id="answer"></p>
+    </div>
 
-           
-                <div class="row justify-content-center text-center">
-                  <button type="button" class="btn btn-primary w-auto" onclick="document.getElementById('answer').innerHTML = one;">Answer</button>
-            <p class="text-success text-center" id="answer"></p>
-                </button>
-
-                  <button type="button" class="btn btn-primary w-auto text-center" onclick="document.getElementById('solution').innerHTML = sol_1 + '<br>' + sol_2 + '<br>' + sol_3 + '<br>' + sol_4 + '<br>' + sol_5 + '<br>' + sol_6 + '<br>' + sol_7;">Solution</button>
-            <p class="text-success text-center" id="solution"></p>
-            </button>
-
-                </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary w-auto" onclick="document.getElementById('solution').innerHTML = sol_1 + '<br>' + sol_2 + '<br>' + sol_3 + '<br>' + sol_4 + '<br>' + sol_5 + '<br>' + sol_6 + '<br>' + sol_7;">
+        Solution
+      </button>
+      <p class="text-success" id="solution"></p>
+    </div>
+  </div>
+</div>
+</div>
         
 
         </div>
@@ -64,8 +56,6 @@
 
     <br>
  
-    
-
     <script>
         
         var j = "Basic Calculator";
@@ -79,8 +69,6 @@
         var sol_7 = "y = -6";
 
         document.getElementById('first').innerHTML = j;
-
-
         </script>
 
 
